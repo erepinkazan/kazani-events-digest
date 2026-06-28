@@ -25,3 +25,7 @@ TIMEZONE = 'Europe/Moscow'
 
 # Days for digest
 DAYS_FORWARD = 7
+
+# Telegram API credentials (get from https://my.telegram.org/apps)
+TELEGRAM_API_ID = os.getenv('TELEGRAM_API_ID', '')
+TELEGRAM_API_HASH = os.getenv('TELEGRAM_API_HASH', '')
