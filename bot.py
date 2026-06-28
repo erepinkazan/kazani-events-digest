@@ -43,7 +43,7 @@ class KazanEventsBot:
             logger.info(f"Found {len(events)} events")
             
             # Format digest
-            digest_text = DigestFormatter.format_digest(events)
+            digest_text = DigestFormatter.format_digest(events, TIMEZONE)
             
             # Send message
             await self.bot.send_message(
